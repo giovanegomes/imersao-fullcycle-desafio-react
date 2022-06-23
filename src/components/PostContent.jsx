@@ -1,4 +1,4 @@
-import { Card } from "@mui/material";
+import { Button, Card, Link } from "@mui/material";
 import { Container } from "@mui/system";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -41,6 +41,9 @@ export const PostContent = ({ params}) => {
           <b>by:</b> {user.name}
         </p>
       </Card>
+      <Button>
+        <Link href='/' color="inherit" underline="none">Back to Posts</Link>
+      </Button>
     </Container>
   );
 };

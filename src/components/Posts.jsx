@@ -21,7 +21,7 @@ export const Posts = () => {
     <Container maxWidth='lg'>
       <h1 class={styles.postTitle}>Posts:</h1>
       <Stack spacing={1}>
-        {posts.length && posts.map((post) => (
+        {posts.length > 0 && posts.map((post) => (
           <Link key={post.id} href={'post/' + post.id} color="inherit" underline="none">
             <Card variant="outlined" class={styles.postCard}>
               <ListItemButton>
